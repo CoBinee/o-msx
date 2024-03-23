@@ -1,6 +1,6 @@
 # ◯
 
-[![Witches](http://img.youtube.com/vi/PwrADppg3Yg/0.jpg)](https://www.youtube.com/watch?v=PwrADppg3Yg)
+[![◯](http://img.youtube.com/vi/PwrADppg3Yg/0.jpg)](https://www.youtube.com/watch?v=PwrADppg3Yg)
 
 ## 説明
 ◯してください。<br>
