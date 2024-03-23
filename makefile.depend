@@ -1,0 +1,28 @@
+crt0.rel            :   crt0.s \
+                        main.inc
+main.rel            :   main.s main.inc \
+                        bios.inc System.inc
+System.rel          :   System.s System.inc \
+                        main.inc bios.inc vdp.inc
+Math.rel            :   Math.s Math.inc
+Sound.rel           :   Sound.s Sound.inc \
+                        bios.inc System.inc
+App.rel             :   App.s App.inc \
+                        bios.inc vdp.inc System.inc Ring.inc Game.inc
+Ring.rel            :   Ring.s Ring.inc \
+                        bios.inc vdp.inc System.inc App.inc
+Game.rel            :   Game.s Game.inc \
+                        bios.inc vdp.inc System.inc Sound.inc App.inc Ring.inc Player.inc Enemy.inc Shot.inc Back.inc Firework.inc
+Player.rel          :   Player.s Player.inc \
+                        bios.inc vdp.inc System.inc Sound.inc App.inc Ring.inc Game.inc Shot.inc
+Enemy.rel           :   Enemy.s Enemy.inc \
+                        bios.inc vdp.inc System.inc Sound.inc App.inc Ring.inc Game.inc Player.inc
+Shot.rel            :   Shot.s Shot.inc \
+                        bios.inc vdp.inc System.inc Sound.inc App.inc Ring.inc Game.inc
+Back.rel            :   Back.s Back.inc \
+                        bios.inc vdp.inc System.inc Sound.inc App.inc Game.inc
+Firework.rel        :   Firework.s Firework.inc \
+                        bios.inc vdp.inc System.inc Sound.inc App.inc Ring.inc Game.inc
+
+backtable.rel       :   backtable.s
+pattern.rel         :   pattern.s
